@@ -6,6 +6,9 @@ jobs:
         environment:
           PGHOST: 127.0.0.1
           RAILS_ENV: test
+          DATABASE_NAME: multiseams_test
+          DATABASE_USER: circleci
+          DATABASE_PASSWORD: superduper
       - image: circleci/postgres:9.4
         environment:
           POSTGRES_USER: circleci

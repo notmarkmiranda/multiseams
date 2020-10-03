@@ -1,0 +1,2 @@
+CREATE USER multiseams;
+ALTER USER multiseams WITH SUPERUSER;
