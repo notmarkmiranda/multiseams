@@ -1,24 +1,19 @@
-# README
+# MultiSMS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A thing I want to build to send text reminders to multiple people without group messaging.
 
-Things you may want to cover:
+## Requirements to run locally
+- Docker
+- docker-compose
 
-* Ruby version
+## Setup
 
-* System dependencies
+```
+git clone https://github.com/notmarkmiranda/multiseams.git
+cd multiseams
+cp .env.sample .env
+docker-compose up -d
+docker-compose exec app bundle exec rake db:create db:migrate
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Navigate to `http://127.0.0.1:3000`
